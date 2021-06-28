@@ -32,9 +32,11 @@ body{
     background-color: violet;
     width: 30%;
     height: 100%;
+    float: left;
 }
+
 /* user */
-.user{
+.user, .main-top{
     background-color: #eaeaea;
     height: 8vh;
     display: flex;
@@ -44,7 +46,7 @@ body{
     align-self: center;
 }
 
-.user-photo-img{
+.user-photo-img, .friend-main-photo img{
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -64,10 +66,12 @@ body{
 
 .user-icons{
     margin-left: 100px;
+    /* display: flex; */
+    
 }
 
 .user-icons i{
-    padding: 0 5px;
+    padding: 0 20px;
     color: lightslategrey;
 }
 
@@ -121,15 +125,16 @@ body{
 
 .search i {
     color: lightslategrey;
-    padding: 5px 10px;
+    padding: 10px 10px;
     margin: 10px;
     background-color: white;
-    /* margin-left: 10px; */
 } 
 
 .search input{
     margin-left: 20px;
     padding: 0 40px;
+    height: 7vh;
+    width: 300px;
 }
 
 /* aside content */
@@ -156,3 +161,48 @@ body{
     align-items: center;
     margin-left: 10px;
 }
+
+/* main */
+.main-content{
+    float: left;
+    background-color: lime;
+    height: 100%;
+    width: 70%;
+}
+
+.friend-info{
+    padding-top: 3px;
+    font-size: 14px;
+}
+
+.chat{
+    height: 74vh;
+    background-color: magenta;
+}
+
+footer{
+    height: 8vh;
+    background-color: #f3eeea;
+}
+
+.smile, .message{
+    float: left;
+}
+
+
+.microphone{
+    float: right;
+}
+
+footer i {
+    color: #6b7376;
+    padding: 20px 30px;
+    font-size: 30px;
+}
+
+footer input{
+    width: 700px;
+    height: 8vh;
+    line-height: 8vh;
+}
+
