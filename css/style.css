@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+.background-top{
+    background-color: #009688;
+    height: 10vh;
+}
+
+.background-bottom{
+    background-color: #d8dbd6;
+    height: 90vh;
+}
+
+.container{
+    background-color: red;
+    width:80%;
+    height:90vh;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    position: absolute;
+}
+
+.aside{
+    background-color: violet;
+    width: 30%;
+    height: 100%;
+}
+
+.user{
+    background-color: yellow;
+    height: 7vh;
+}
+
+.notice{
+    background-color: blue;
+    height: 7vh;
+}
+
+.search{
+    background-color: greenyellow;
+    height: 7vh;
+}
