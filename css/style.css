@@ -27,24 +27,132 @@ body{
     transform:translate(-50%, -50%);
     position: absolute;
 }
-
+/* aside */
 .aside{
     background-color: violet;
     width: 30%;
     height: 100%;
 }
-
+/* user */
 .user{
-    background-color: yellow;
-    height: 7vh;
+    background-color: #eaeaea;
+    height: 8vh;
+    display: flex;
 }
 
+.user-photo{
+    align-self: center;
+}
+
+.user-photo-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.user-icons, .user-name{
+    font-size: 14px;
+    height: 8vh;
+    line-height: 8vh;
+}
+
+.user-name{
+    display: flex;
+}
+
+.user-icons{
+    margin-left: 100px;
+}
+
+.user-icons i{
+    padding: 0 5px;
+    color: lightslategrey;
+}
+
+/* notice */
 .notice{
-    background-color: blue;
-    height: 7vh;
+    background-color: #8edafc;
+    height: 8vh;
 }
 
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.notice-icons{
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 10px;
+    float: left;
+    margin-top: 5px;
+}
+
+.notice-icons i{
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+    color: #8edafc;
+    padding: 0 7px;
+}
+
+.notice-content{
+    float: left;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.underline{
+    text-decoration: underline;
+    color: lightslategrey;
+
+}
+
+/* search */
 .search{
-    background-color: greenyellow;
+    background-color: #eaeaea;
     height: 7vh;
+    display: flex;
+    align-content: center;
+}
+
+.search i {
+    color: lightslategrey;
+    padding: 5px 10px;
+    margin: 10px;
+    background-color: white;
+    /* margin-left: 10px; */
+} 
+
+.search input{
+    margin-left: 20px;
+    padding: 0 40px;
+}
+
+/* aside content */
+.aside-content{
+    background-color: lightblue;
+    height: calc(100% - 23vh);
+    overflow-y: scroll;
+}
+
+/* friend */
+.friend{
+    border-bottom: 1px solid gray;
+    padding: 5px;
+    display: flex;
+}
+
+.friend img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;  
+}
+
+.friend span{
+    align-items: center;
+    margin-left: 10px;
 }
