@@ -189,19 +189,28 @@ footer{
     float: left;
 }
 
+.smile{
+    width: 15%;
+}
+
+.message{
+    width: 60%;
+}
 
 .microphone{
     float: right;
+    width: 15%;
 }
 
 footer i {
     color: #6b7376;
-    padding: 20px 30px;
     font-size: 30px;
+    padding: 10px 30px;
 }
 
 footer input{
-    width: 700px;
+    text-align: center;
+    width: 500px;
     height: 8vh;
     line-height: 8vh;
 }
