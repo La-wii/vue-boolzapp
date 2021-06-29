@@ -103,24 +103,26 @@
 
                 <div class="chat">
 
-                    <ul>
-                        <li class="green clearfix">messaggio utente
-                            <div class="stato">
-                                spedito
-                            </div>
-                            <div class="data">
-                                29/06/2021
-                            </div>
-                        </li>
-                        <li class="white clearfix">messaggio intelocutore
-                            <div class="stato">
-                                ricevuto
-                            </div>
-                            <div class="data">
-                                29/06/2021
-                            </div>
-                        </li>
-                    </ul>
+                    
+                    <div class="green clearfix" v-for="(elemento, index) in contacts[0].messages">
+                        Messaggio utente
+                        <div class="stato">
+                            {{elemento.text}}
+                        </div>
+                        <div class="data">
+                            {{elemento.date}}
+                        </div>
+                    </div>
+
+                    <div class="white clearfix">
+                        Messaggio interlocutore
+                        <div class="stato">
+                            ricevuto
+                        </div>
+                        <div class="data">
+                            29/06/2021
+                        </div>
+                    </div>
 
                 </div>
 
