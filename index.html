@@ -77,26 +77,17 @@
 
                 <div class="aside-content">
 
-                    <div class="friend">
-                        <img src="img/avatar_1.jpg" alt="">
-                        <span>Michele</span>
-                    </div>
+                    <!-- <ul>
+                        <li class="friend"></li>
+                    </ul> -->
 
-                    <div class="friend">
-                        <img src="img/avatar_2.jpg" alt="">
-                        <span>Fabio</span>
-                    </div>
+                    
 
-                    <div class="friend">
-                        <img src="img/avatar_3.jpg" alt="">
-                        <span>Samuele</span>
+                    <div class="friend" v-for="(user, index) in contacts">
+                        <!-- <img src="img/avatar_1.jpg" alt=""> -->
+                        <img :src="'img/avatar' +  user.avatar + '.jpg'" alt="user avatar">
+                        <span>{{user.name}}</span>
                     </div>
-
-                    <div class="friend">
-                        <img src="img/avatar_4.jpg" alt="">
-                        <span>Luisa</span>
-                    </div>
-
 
                 </div>
 
