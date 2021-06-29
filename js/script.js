@@ -46,9 +46,10 @@ const app = new Vue(
                     text: 'Mi piacerebbe ma devo andare a fare la spesa.',
                     status: 'sent'
                     }
-                ]
+                    ]
                 }
             ]
+    
         }
     }
 );

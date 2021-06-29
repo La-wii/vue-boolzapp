@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="user-name">
-                        <p>Nome Utente</p>
+                        <p>Utente</p>
                     </div>
 
                     <div class="user-icons">
@@ -77,14 +77,8 @@
 
                 <div class="aside-content">
 
-                    <!-- <ul>
-                        <li class="friend"></li>
-                    </ul> -->
-
-                    
 
                     <div class="friend" v-for="(user, index) in contacts">
-                        <!-- <img src="img/avatar_1.jpg" alt=""> -->
                         <img :src="'img/avatar' +  user.avatar + '.jpg'" alt="user avatar">
                         <span>{{user.name}}</span>
                     </div>
@@ -108,6 +102,11 @@
                 </div>
 
                 <div class="chat">
+
+                    <ul>
+                        <li>messaggio</li>
+
+                    </ul>
 
                 </div>
 
