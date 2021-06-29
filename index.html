@@ -92,48 +92,56 @@
             <div class="main-content">
 
                 <div class="main-top clearfix">
+
                     <div class="friend-main-photo">
                         <img src="img/avatar_1.jpg" alt="">
                     </div>
+
                     <div class="friend-info">
                         <p>Michele</p>
                         <p>Ultimo accesso oggi alle</p>
                     </div>
+
                 </div>
 
+            
+                <!-- start chat -->
                 <div class="chat">
 
                     <div v-for="(elemento, index) in contacts[0].messages">
 
-                    <div v-if="elemento.status == 'received'" class="green">
-                        <div class="messaggio">
-                            {{elemento.text}}
-                        </div>
+                        <div v-if="elemento.status == 'received'" class="green">
 
-                        <div class="data">
-                            {{elemento.date}}
-                        </div>
+                            <div class="messaggio">
+                                {{elemento.text}}
+                            </div>
+
+                            <div class="data">
+                                {{elemento.date}}
+                            </div>
                         
-                    </div>
-                    
-                    <div v-else class="white">
-                        <div class="utente">
-                            {{elemento.text}}
                         </div>
-
-                        <div class="data">
-                            {{elemento.date}}
-                        </div>
-                    </div>
-
                     
+                        <div v-else class="white">
+
+                            <div class="utente">
+                                {{elemento.text}}
+                            </div>
+
+                            <div class="data">
+                                {{elemento.date}}
+                            </div>
+
+                    </div>
 
                 </div>
-
+                <!-- end chat -->
                 
     
             </div>
 
+
+                <!-- start footer -->
                 <footer>
 
                     <div class="smile">
@@ -149,8 +157,8 @@
                     </div>
                     
                 </footer>
-            
-        </div>
+                <!-- end footer -->
+        <!-- </div> -->
         <!-- end container -->
 
     </div>
