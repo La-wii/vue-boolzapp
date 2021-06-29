@@ -180,6 +180,24 @@ body{
     background-color: magenta;
 }
 
+.chat ul li{
+    list-style: none;
+}
+
+.green{
+    background-color: greenyellow;
+    float: left;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.white{
+    background-color: white; 
+    float: right;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
 footer{
     height: 8vh;
     background-color: #f3eeea;
