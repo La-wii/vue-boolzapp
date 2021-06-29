@@ -71,7 +71,7 @@ body{
 }
 
 .user-icons i{
-    padding: 0 20px;
+    padding: 0 10px;
     color: lightslategrey;
 }
 
@@ -105,7 +105,7 @@ body{
 
 .notice-content{
     float: left;
-    font-size: 14px;
+    font-size: 12px;
     padding: 5px 10px;
 }
 
