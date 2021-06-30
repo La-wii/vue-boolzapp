@@ -69,22 +69,25 @@
                 </div>
                 <!-- end notice -->
 
+                <!-- start search -->
                 <div class="search">
                     <i class="fas fa-search"></i>
                     <label for="search"></label>
                     <input type="text" placeholder="Cerca o inizia una nuova chat">
                 </div>
+                <!-- end search -->
 
+                <!-- start aside-content -->
                 <div class="aside-content">
 
 
-                    <div class="friend" v-for="(user, index) in contacts">
+                    <div class="friend" v-for="(user, index) in contacts" @click="selFriend(elemento,index)">
                         <img :src="'img/avatar' +  user.avatar + '.jpg'" alt="user avatar">
                         <span>{{user.name}}</span>
                     </div>
 
                 </div>
-
+                <!-- end aside-content -->
             </div>
             <!-- end aside -->
 
@@ -108,7 +111,7 @@
                 <!-- start chat -->
                 <div class="chat">
 
-                    <div v-for="(elemento, index) in contacts[0].messages">
+                    <div v-for="(elemento, index) in contacts[this.counter].messages">
 
                         <div v-if="elemento.status == 'received'" class="green">
 
