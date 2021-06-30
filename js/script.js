@@ -1,6 +1,7 @@
 var app = new Vue({
     el: '#app',
     data: {
+        newMex : '',
         counter : 0,
         contacts: [
 
@@ -59,7 +60,6 @@ var app = new Vue({
 
             ],
             },
-
             
         ],
         
@@ -68,8 +68,17 @@ var app = new Vue({
     methods :{
         selFriend(item,index){
             this.counter = index;
-        }
+        },
+
+        newMessage(){
+
+            if(this.newMex != ''){
+                this.messages.push(this.newMex);
+                this.newMex = ''
+            }
+
+        },   
          
     }
     
-  })
+})

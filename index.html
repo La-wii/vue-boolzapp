@@ -14,7 +14,6 @@
 </head>
 <body>
 
-    
 
     <div id="app">
 
@@ -97,11 +96,12 @@
                 <div class="main-top clearfix">
 
                     <div class="friend-main-photo">
-                        <img src="img/avatar_1.jpg" alt="">
+                        <img :src="'img/avatar' + contacts[this.counter].avatar + '.jpg'" alt="">
                     </div>
 
                     <div class="friend-info">
-                        <p>Michele</p>
+                        <p>{{contacts[counter].name}}</p>
+
                         <p>Ultimo accesso oggi alle</p>
                     </div>
 
@@ -152,7 +152,7 @@
                     </div>
 
                     <div class="message">
-                        <input type="text">
+                        <input type="text" placeholder="Scrivi un messaggio" v-model="newMex" @keyup.enter="newMessage">
                     </div>
 
                     <div class="microphone">
@@ -161,7 +161,8 @@
                     
                 </footer>
                 <!-- end footer -->
-        <!-- </div> -->
+
+        </div>
         <!-- end container -->
 
     </div>
@@ -169,6 +170,7 @@
 
     <!-- js -->
     <script src="js/script.js"></script>
+
 
 </body>
 </html>
