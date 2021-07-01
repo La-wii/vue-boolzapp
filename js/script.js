@@ -1,7 +1,7 @@
 var app = new Vue({
+    search: '',
     el: '#app',
     data: {
-        cerca: "",
         newMessage : '',
         counter : 0,
         contacts: [
@@ -72,7 +72,7 @@ var app = new Vue({
         },
         
         sendMessage(){
-            if(this.newMessage =! ''){
+            if(this.newMessage != ''){
 
                 const newMess = {
                     date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
