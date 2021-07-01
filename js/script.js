@@ -1,7 +1,8 @@
 var app = new Vue({
     el: '#app',
     data: {
-        newMex : '',
+        cerca: "",
+        newMessage : '',
         counter : 0,
         contacts: [
 
@@ -69,16 +70,36 @@ var app = new Vue({
         selFriend(item,index){
             this.counter = index;
         },
+        
+        sendMessage(){
+            if(this.newMessage =! ''){
 
-        newMessage(){
+                const newMess = {
+                    date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
+                    text: this.newMessage,
+                    status: 'sent'
+                    
+                };
 
-            if(this.newMex != ''){
-                this.messages.push(this.newMex);
-                this.newMex = ''
+                this.contacts[this.counter].messages.push(newMess);
+                console.log(newMess);
+
+                this.newMessage = '';
             }
 
-        },   
-         
+            setTimeout(()=>{
+
+                const risposta = {
+                    date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
+                    text: 'ok',
+                    status: 'received'
+                    
+                };
+                this.contacts[this.counter].messages.push(risposta);
+                
+            },1000);    
+        }
+
     }
     
 })
